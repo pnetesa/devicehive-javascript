@@ -25,8 +25,8 @@ var pin = {
 
 var app = ({
     
-    deviceHive: new DeviceHive('http://nn7502.pg.devicehive.com/api', 
-        '6ae2c23b-8571-4521-81ef-d9dcfd614b34', 
+    deviceHive: new DeviceHive('http://localhost/DeviceHive.API',
+        '9f33566e-1f8f-11e2-8979-c42c030dd6a5',
         'CtIeVHXvfLW5bRX8c/8/BdD9VugfiEHj8EJJDejuyRc='),
     
     device: {

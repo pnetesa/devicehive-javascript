@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nuclear Reactor Control</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-rotate/jquery.rotate.js"></script>
+    <script type="text/javascript" src="bower_components/devicehive/build/browser/devicehive.client.js"></script>
+    <script type="text/javascript" src="bower_components/devicehive/build/browser/devicehive.client.jquery.js"></script>
+    <script type="text/javascript" src="meter.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <link href="meter.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var deviceHive = $.dhClient("http://localhost/DeviceHive.API", "dhadmin", "dhadmin_#911");
+            app.start($, deviceHive, "9f33566e-1f8f-11e2-8979-c42c030dd6a5");
+        });
+    </script>
+</head>
+<body>
+    <section id="main" class="group">
+        <header>
+            Nuclear Reactor Control: <span id="on-off">OFF</span>
+        </header>
+        <div id="meter">
+            <span id="scale-value">0%</span>
+            <img id="hand" src="img/hand.png" />
+        </div>
+        <section id="controls">
+            <button id="btn-toggle-protection">Protection on</button>
+            <article id="messages">
+            </article>
+        </section>
+        <section id="indicators">
+            Power level: <span id="power-level">n/a</span>
+            <ul>
+                <li id="protection">Protection</li>
+                <li id="overload">Overload</li>
+                <li id="danger">Danger!</li>
+            </ul>
+        </section>
+    </section>
+</body>
+</html>

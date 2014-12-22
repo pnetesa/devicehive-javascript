@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Guess word</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/devicehive/build/browser/devicehive.client.js"></script>
+    <script type="text/javascript" src="bower_components/devicehive/build/browser/devicehive.client.jquery.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var deviceHive = $.dhClient("http://localhost/DeviceHive.API", "dhadmin", "dhadmin_#911");
+            app.start($, deviceHive, "9f33566e-1f8f-11e2-8979-c42c030dd6a5");
+        });
+    </script>
+</head>
+<body>
+    <section id="main" class="group">
+        <header>
+            <span id="deice">Unknown device</span> / <span id="status">None</span> / <span id="state">None</span>
+        </header>
+
+        <p>
+            Use HW button to toggle the suggested word
+        </p>
+        <p>
+            <span id="suggested-word">...</span>
+        </p>
+        
+        <footer>
+            <span id="comment">...</span>
+        </footer>
+    </section>
+</body>
+</html>

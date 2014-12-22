@@ -1,0 +1,20 @@
+﻿body {
+	margin: 10px;
+	font-size: 18px;
+	font-family: Verdana, Arial;
+}
+
+header {
+	font-size: 12px;
+}
+
+#suggested-word {
+	border: 1px solid #808080;
+	padding: 10px;
+}
+
+#comment {
+	font-size: 12px;
+	padding: 5px;
+	background-color: #fffade;
+}

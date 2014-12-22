@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Light Sensor Device Client</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/devicehive/build/browser/devicehive.client.js"></script>
+    <script type="text/javascript" src="bower_components/devicehive/build/browser/devicehive.client.jquery.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var deviceHive = $.dhClient("http://localhost/DeviceHive.API", "dhadmin", "dhadmin_#911");
+            app.start($, deviceHive, "9f33566e-1f8f-11e2-8979-c42c030dd6a5");
+        });
+     </script>
+</head>
+<body>
+
+    <section class="container">
+        <h4>Light Sensor Device information:</h4>
+        <ul class="device-info-holder">
+            <li>Name: <span class="device-name">N/A</span></li>
+            <li>Status: <span class="device-status">N/A</span></li>
+            <li>Channel State: <span class="channel-state">N/A</span></li>
+            <li>Light intensity: <span class="light-intensity">N/A</span></li>
+            <li class="light-text"></li>
+        </ul>
+    </section>
+
+</body>
+</html>

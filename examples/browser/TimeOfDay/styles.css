@@ -1,0 +1,74 @@
+﻿body, html {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-family: Verdana, Arial;
+}
+
+h4 {
+	margin: 20px 0 0 15px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 6px;
+}
+
+table td.title-column {
+	width: 130px;
+}
+
+.container {
+	margin: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.device-info-holder {
+	padding: 20px 2%;
+}
+
+.device-led-state {
+	width: 16px;
+	height: 16px;
+}
+
+.device-led-state.on {
+	background-image: url(images/led-on.gif);
+}
+
+.device-led-state.off {
+	background-image: url(images/led-off.gif);
+}
+
+.device-temperature {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #004444;
+}
+
+.device-temperature.big {
+	color: #dd4444;
+}
+
+.button {
+	margin: 0 2px;
+	color: white;
+	border-radius: 3px;
+	padding: 6px 16px 8px;
+	text-decoration: none;
+	background-color: green;
+}
+
+.device-info-holder li {
+	padding: 5px 0 5px 0;
+	list-style: none;
+}
+
+.light-text {
+	font-size: 24px;
+	font-weight: bold;
+}

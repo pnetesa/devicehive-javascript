@@ -1,0 +1,18 @@
+﻿#meter {
+	width: 200px;
+	height: 120px;
+	overflow: hidden;
+	background: url(img/scale.png) no-repeat top center;
+}
+
+#scale-value {
+    position: absolute;
+	color: #0fa703;
+	font-size: 36px;
+	margin: 35px 0 0 80px;
+}
+
+#hand {
+	width: 200px;
+	height: 200px;
+}

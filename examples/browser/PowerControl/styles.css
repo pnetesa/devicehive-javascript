@@ -1,0 +1,112 @@
+﻿@font-face {
+    font-family: 'BPdotsSquares';
+    src: url('font/BPdotsSquare.otf');
+}
+
+body, html {
+	margin: 10px;
+	font-size: 18px;
+	font-family: 'BPdotsSquares', Verdana, Arial;
+	background-color: #fafae8;
+}
+
+section {
+	border: 1px;
+}
+
+header {
+	color: #0fa703;
+	margin: 10px;
+	text-align: center;
+}
+
+#main {
+	background-color: #ffffff;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: 4px 4px 5px #808080;
+    border-radius: 10px;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1; /* IE6&7 */
+}
+
+#meter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#controls {
+	float: left;
+	margin: 5px;
+	width: 47%;
+	height: 150px;
+	/*background-color: #fcf4b1;*/
+}
+
+#indicators {
+	float: right;
+	margin: 5px;
+	width: 47%;
+	height: 150px;
+	/*background-color: #dbd9cd;*/
+	text-transform: uppercase;
+}
+
+#indicators ul {
+	margin: 0 0 0 10px;
+	padding: 0px;
+	list-style: none;
+}
+
+#indicators ul li:before {
+	content: "•";
+	font: 24px Verdana, Arial;
+	padding-right: 5px;
+}
+
+#indicators #protection {
+	color: #d7b600;
+	visibility: hidden;
+}
+
+#indicators #overload {
+	color: #ff0000;
+	visibility: hidden;
+}
+
+#indicators #danger {
+	color: #ff0000;
+	visibility: hidden;
+}
+
+#messages {
+	font-size: 12px;
+	font-weight: bold;
+	color: #725100;
+	border: 1px solid #80965a;
+	margin: 15px 0 0 0;
+	padding: 2px 5px 2px 5px;
+	height: 105px;
+	background-color: #a1b086;
+    border-radius: 7px;
+	overflow: auto;
+}
+
+button {
+	font: 16px 'BPdotsSquares', Verdana, Arial;
+	text-transform: uppercase;
+	width: 100%;
+}

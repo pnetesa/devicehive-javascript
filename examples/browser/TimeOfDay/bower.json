@@ -1,0 +1,13 @@
+{
+    "name": "TimeOfDay",
+    "version": "0.0.0",
+    "authors": [
+        "Pavel Netesa <sorokinjef@gmail.com>"
+    ],
+    "description": "TimeOfDay example",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "devicehive": "~1.3.0"
+    }
+}

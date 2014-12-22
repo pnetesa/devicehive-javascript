@@ -1,0 +1,14 @@
+{
+  "name": "devicehive_edison",
+  "version": "1.0.0",
+  "description": "devicehive-edison",
+  "author": {
+    "name": "devicehive",
+    "email": ""
+  },
+  "dependencies": {
+    "mraa": "^0.5.0",
+    "xhr2": "^0.1.0",
+    "ws": "0.4.25"
+  }
+}
